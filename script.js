@@ -1,6 +1,6 @@
 'use strict';
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
-let score = 20;
+let score = 10;
 let highscore = 0;
 alert('please guess any number in range 1 to 20, and write it in the box:');
 document.querySelector('.check').addEventListener('click', function () {
@@ -59,7 +59,7 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.number').style.width = '15rem';
   document.querySelector('.message').textContent = 'Start guessing...';
   //reset score to 20
-  score = 20;
+  score = 10;
   document.querySelector('.score').textContent = score;
   document.querySelector('.number').textContent = '?';
 });
